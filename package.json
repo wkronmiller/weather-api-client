@@ -1,0 +1,28 @@
+{
+  "name": "@wkronmiller/weather-api-client",
+  "version": "1.0.0",
+  "description": "Minimal ESM client for the National Weather Service (weather.gov) API",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "jest": {
+    "globals": {
+      "fetch": "global"
+    },
+    "transform": {},
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0"
+  }
+}
